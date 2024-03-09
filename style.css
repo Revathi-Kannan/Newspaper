@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Global Styles */
+body {
+    background-color: whitesmoke;
+}
+
+.top-line {
+    background-color: darkblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Header {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('https://www.livechennai.com/images/oldmad09.jpg');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.Menu, .Menu a {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+    text-decoration: none;
+}
+
+.Menu:hover, .Menu:hover a {
+    color: yellow;
+    transform: translateY(-3px);
+}
+
+.Menu1 {
+    color: chocolate;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.date {
+    margin-left: 680px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.first_line, .second_line {
+    background: linear-gradient(70deg, black, white);
+    height: 5px;
+}
+
+/* Side Headers */
+.sideheader {
+    position: absolute;
+    top: 250px;
+    left: 20%;
+    margin-left: 320px;
+    padding-bottom: 100%;
+    font-weight: bolder;
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sideheader:hover {
+    color: orangered;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Content Paragraphs */
+.para {
+    margin-left: 20px; /* Adjust as needed */
+    margin-top: 150px;
+    cursor: default !important;
+}
+
+.para1, .para2, .para3 {
+    margin-left: 15px; /* Adjust as needed */
+    margin-top: 40px;
+    padding-right: 20px;
+    cursor: default !important;
+    font-size: 25px;
+    white-space: wrap; /* This should be white-space: normal; for word wrap */
+}
+
+.stylish-text {
+    font-family: 'Parisienne', cursive;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .Header {
+        font-size: 40px;
+    }
+    .sideheader {
+        font-size: 30px;
+    }
+    .Main-heading, .Country1, .Country2, .Country3, .Country4, .Country5, .Country6, .Country7, .Country8, .Country9, .Country10 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Menu {
+        font-size: small;
+    }
+    .date {
+        margin-left: 200px;
+    }
+    .para, .para1, .para2, .para3 {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sideheader {
+        font-size: 20px;
+        margin-left: 100px; /* Adjust as needed */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Menu {
+        font-size: large;
+    }
+    .date {
+        margin-left: 800px;
+    }
+    .para, .para1, .para2, .para3 {
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+}
